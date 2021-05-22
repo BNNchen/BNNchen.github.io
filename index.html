@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Myfriend</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* 
+            header的格式，可以考虑使用图片
+        */
+        .headercontent{
+            font-size: 25px;
+            font-family:YOUYUAN;
+            font-weight: 900;
+            height:60px;
+            background-color: yellow;
+            text-align:center;
+            line-height: 60px;
+        }
+
+
+        #box1{
+            margin-top:20px;
+            font-size: 15px;
+            font-family: YOUYUAN;
+            width:80%;
+            height:500px;
+            border:pink 5px solid;
+            text-indent:2em
+        }
+        .ButtonSet{
+            margin-top: 20px;
+            width:90px;
+            height:30px;
+            font-size: 22px; 
+            font-family:'Times New Roman', Times, serif; 
+            font-weight: 900;
+            
+        }
+        .box2{
+            width: 70%;
+            height:40px;
+            border:#bfa solid 8px;
+            margin:3% 10% 0% 2%;
+        }
+        .box3{
+            width: 30%;
+            height: 40px;
+            background-color:gold;
+            color:brown;
+            font-size:130%;
+            text-align: center; 
+            font-weight: 800;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <header >
+        <div class="headercontent">
+            这是一个简单的抽奖系统
+        </div>
+    </header>
+    <main>
+        <div align="center" >
+        </div>
+        <div style="margin-top: 50px;margin-left: 10px; font-size: 25px;"> 
+            <p class="word">
+                <em class="spac1">&nbsp&nbsp&nbsp&nbsp&nbsp想写给自己的话</em>
+                
+            </p>
+            <p class="word1" style="font-size:15px;">
+                <em class="space2">&nbsp&nbsp&nbsp&nbsp&nbsp 包括给自己的鼓励或者对当前状况的一种发泄</em>
+            </p>
+            <textarea name="Input" id="box1" cols="50" rows="30"></textarea>
+            <input type="button" class="ButtonSet" value="submit" name="bt" size="30" onclick="alert('提交成功,恭喜你获得一次抽奖的机会');" >  
+        </div>
+          <!-- 
+             抽奖环节，希望点击submit之后出现抽奖的滚动菜单   
+          -->
+        <div class="lottery" style="margin-top:30px">
+          
+            <p>
+                <em style="font-size: 15px; ">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp提交成功开始抽奖
+                </em>
+            </p>
+            <div class="box2">
+                
+                    <marquee  scrollamount=13 direction=right><div class="box3">祝你好运</div></marquee>
+                
+                <input type="button" style="width:120px;height:50px; font-size: 15px; font-family: YOUYUAN;" class="ButtonSet" value="点击开始抽奖" name="bt" onclick="changeText(this)" style="margin-bottom:100px;">
+    <script>
+        function changeText(id){
+        alert('恭喜你中奖，请提交个人信息及取快递的位置，奖品将在未来几天发送给你');
+        location.href="http://coacstudy.mikecrm.com/S8EOne8";
+        }
+        </script>
+            </div>
+        </div>
+    </main>
+    <main>
+
+    </main>
+</body>
+</html>
